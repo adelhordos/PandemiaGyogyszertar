@@ -1,0 +1,37 @@
+Kedves javító Hallgatótársam!
+Sok szeretettel üdvözöllek a Pandemia online gyógyszertáramban! A gyógyszertárban 10 féle készítmény található, ezeket kosárba lehet helyezni és ki lehet törölni.
+Röviden összefoglalom, milyen fájlok léteznek és milyen funkciókat látnak el:
+1. MainActivity és activity_main.xml
+    Ezen az oldalon lehetőség van email/password páros, vendég és Google fiókos bejelentkezésre, továbbá a Regisztráció gomb megnyomására.
+    Az oldalnak landscape nézetet is készítettem, továbbá tabletes nézetet is, ezeket szintén a layoutok között megtalálod.
+2. RegistrationActivity és activity_registration.xml
+    Ezen az oldalon lehet regisztrálni különféle adatok megadásával. A Regisztráció gombra nyomva ha minden feltétel megfelelő, el is kezdhetjük a vásárlást.
+    A Mégse gomb visszavisz a bejelentkezős oldalra.
+3. ProductsActivity, ProductItem, ProductItemAdapter, activity_products.xml, list.xml és custom_menu_item.xml
+    Ezen fájlok valósítják meg magát a gyógyszertárat, ahol cardview-szerű elrendezésben jelennek meg a termékek, létezik egy menüsor kereséssel, kosár ikonnal, nézet váltással és kijelentkezéssel.
+    A termékeket berakhatjuk a kosárba, ez a Firestoreban is látszódik, a kosár ikon meg fog változni.
+    A termékeket ki is törölhetjük, ez szintén a FireStoreban is fog látszódni.
+4. NotificationHelper
+    Azt a funkciót valósítja meg, hogy amikor berakok egy elemet a kosárba, megjelenjen az értesítési sávban az ikonja és rezegjen a telefon.
+5. RandomAsyncLoader és RandomAsynctask
+    A bejelentkezés oldalon a vendég bejelentkezés csak 10 mp múlva valósulhasson meg.
+
+A pontozási táblázat alapján az alábbiakat valósítottam meg:
+-regisztráció
+-autentikált bejelentkezés
+-min. 3 activity: belépés, regisztráció, vásárlás...
+-layout fajták: linear, relative, constraint
+-a reszponzivitás érdekében csináltam landscape layoutokat is és egy tabletes nézetet
+-2 animáció az anim-ban: scale.xml -ha rányomsz a Kosárba gombra, meg fog nőni; slide_in_row.xml: az új elemek jobbról beúsznak
+-az onResumeban egy Toastot alkalmazok és az onPauseben sharedpreferencest
+-az első alkalommal egy permission segítségével (MainActivity) megkérdezem hogy hozzáférhet-e az alkalmazás a helyadatokhoz
+-notification a NotificationHelperben
+-CRUD meg van valósítva
+-Intenteket használok, elvileg minden activity elérhető
+-csak 1 Firestore lekérdezést csináltam, rendezem a termékeket a kosárba betevések alapján
+
+Notes:
+1. Bár a videók alapján csináltam a projektet, elég sűrűn fel vannak kommentezve a kódok, hogy lásd, nem csak copy paste volt.
+2. Ha valami nem működik (elvileg mindennek kellene), vagy bármilyen kérdésed van, kérlek, keress meg Discordon, a nevem That's mee#1329
+
+Jó javítást kívánok, kitartást az utolsó hétre és sikeres vizsgaidőszakot! :)

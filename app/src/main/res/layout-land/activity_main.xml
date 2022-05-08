@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+  <TextView
+      android:id="@+id/logintextView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:background="#8AC1B6"
+      android:fontFamily="@font/aclonica"
+      android:text="@string/welcome"
+      android:textAlignment="center"
+      android:textColor="#062649"
+      android:textSize="16sp" />
+
+  <EditText
+      android:id="@+id/emailEditText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:ems="12"
+      android:fontFamily="@font/akaya_telivigala"
+      android:hint="@string/email"
+      android:inputType="textEmailAddress"
+     />
+
+  <EditText
+      android:id="@+id/passwordEditText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:ems="12"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:fontFamily="@font/akaya_telivigala"
+      android:hint="@string/password"
+      android:inputType="textPassword"
+      />
+
+  <Button
+      android:id="@+id/loginButton"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:backgroundTint="#8AC1B6"
+      android:fontFamily="@font/archivo_black"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:onClick="login"
+      android:text="@string/login"
+      android:textColor="#062649" />
+  <Button
+      android:id="@+id/guestLoginButton"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:backgroundTint="#8AC1B6"
+      android:fontFamily="@font/archivo_black"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:onClick="loginAsGuest"
+      android:text="Bejelentkezés vendégként\n10 másodperc után"
+      android:textColor="#062649"
+      />
+  <Button
+      android:id="@+id/googleLoginButton"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:backgroundTint="#8AC1B6"
+      android:fontFamily="@font/archivo_black"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:onClick="loginWithGoogle"
+      android:text="Bejelentkezés Google fiókkal"
+      android:textColor="#062649"
+       />
+
+  <Button
+      android:id="@+id/registerButton"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:backgroundTint="#8AC1B6"
+      android:fontFamily="@font/archivo_black"
+      android:onClick="registration"
+      android:text="@string/registration"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:textColor="#062649" />
+
+
+</LinearLayout>
+</ScrollView>

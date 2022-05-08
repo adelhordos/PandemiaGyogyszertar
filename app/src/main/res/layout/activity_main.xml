@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <TextView
+      android:id="@+id/LogintextView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#8AC1B6"
+      android:ems="25"
+      android:fontFamily="@font/aclonica"
+      android:text="@string/welcome"
+      android:textAlignment="center"
+      android:textColor="#062649"
+      android:textSize="20sp"
+      app:layout_constraintBottom_toTopOf="@+id/emailEditText"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.496"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.708" />
+
+  <EditText
+      android:id="@+id/emailEditText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:ems="12"
+      android:fontFamily="@font/akaya_telivigala"
+      android:hint="@string/email"
+      android:inputType="textEmailAddress"
+      android:textColor="#000000"
+      android:textColorHighlight="#000000"
+      android:textColorLink="#000000"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.286"
+      tools:layout_editor_absoluteX="0dp" />
+
+  <EditText
+      android:id="@+id/passwordEditText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:ems="12"
+      android:fontFamily="@font/akaya_telivigala"
+      android:hint="@string/password"
+      android:inputType="textPassword"
+      android:textColorHighlight="#000000"
+      android:textColorLink="#000000"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/emailEditText"
+      app:layout_constraintVertical_bias="0.063" />
+
+  <Button
+      android:id="@+id/loginButton"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:backgroundTint="#8AC1B6"
+      android:fontFamily="@font/archivo_black"
+      android:onClick="login"
+      android:text="@string/login"
+      android:textColor="#062649"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/passwordEditText"
+      app:layout_constraintVertical_bias="0.289" />
+
+  <Button
+      android:id="@+id/guestLoginButton"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:backgroundTint="#8AC1B6"
+      android:fontFamily="@font/archivo_black"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:onClick="loginAsGuest"
+      android:text="Bejelentkezés vendégként\n10 másodperc után"
+      android:textColor="#062649"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/loginButton"
+      app:layout_constraintVertical_bias="0.076" />
+  <Button
+      android:id="@+id/googleLoginButton"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:backgroundTint="#8AC1B6"
+      android:fontFamily="@font/archivo_black"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:onClick="loginWithGoogle"
+      android:text="Bejelentkezés Google fiókkal"
+      android:textColor="#062649"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/guestLoginButton"
+      app:layout_constraintVertical_bias="0.076" />
+
+  <Button
+      android:id="@+id/registerButton"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:backgroundTint="#8AC1B6"
+      android:fontFamily="@font/archivo_black"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:onClick="registration"
+      android:text="@string/registration"
+      android:textColor="#062649"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/googleLoginButton"
+      app:layout_constraintVertical_bias="0.076"
+       />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

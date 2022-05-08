@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">Pandemia</string>
+    <string name="email">E-mail cím</string>
+    <string name="password">Jelszó</string>
+    <string name="login">Bejelentkezés</string>
+    <string name="welcome">Pandemia gyógyszertár\nBejelentkezés</string>
+    <string name="registration">Regisztráció</string>
+    <string name="welcomeregistration">Pandemia gyógyszertár\nRegisztráció</string>
+    <string name="username">Név</string>
+    <string name="password_again">Jelszó újra</string>
+    <string name="cancel">Mégse</string>
+    <string name="phone_number">Telefonszám</string>
+    <string name="address">Lakcím</string>
+    <string name="more_info">Részletek</string>
+    <string name="cart">Kosárba</string>
+    <string-array name="phone_modes">
+        <item>Otthoni</item>
+        <item>Munkahelyi</item>
+        <item>Mobil</item>
+    </string-array>
+    <!--Recyclerview adatok-->
+    <string name="item_name">Termék neve</string>
+    <string name="item_type">Termék típusa</string>
+    <string name="delete">Törlés</string>
+
+    <string-array name="medicine_item_names">
+        <item>AmonMed Covid-19 antigén gyorsteszt</item>
+        <item>Béres C-vitamin 1000mg</item>
+        <item>JutaVit D-vitamin cseppek</item>
+        <item>Advil Ultra Forte</item>
+        <item>Apranax Dolo</item>
+        <item>Roche Covid-19 Antigén önellenőrző orrteszt</item>
+        <item>Algopyrin</item>
+        <item>Rubophen</item>
+        <item>Vitamin Multivitamin</item>
+        <item>Naturland Svédcsepp</item>
+    </string-array>
+    <string-array name="medicine_item_types">
+        <item>Covid gyorsteszt</item>
+        <item>Vitamin</item>
+        <item>Vitamin</item>
+        <item>Fejfájás csillapító</item>
+        <item>Gél</item>
+        <item>Covid gyorsteszt</item>
+        <item>Lázcsillapító</item>
+        <item>Lázcsillapító</item>
+        <item>Multivitamin</item>
+        <item>Svédcsepp</item>
+    </string-array>
+    <array name="medicine_item_rates">
+        <item>3</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>4.5</item>
+        <item>2.5</item>
+        <item>1</item>
+        <item>3</item>
+        <item>4.5</item>
+        <item>3.5</item>
+        <item>5</item>
+    </array>
+    <array name="medicine_item_images">
+        <item>@drawable/covidteszt1</item>
+        <item>@drawable/cvitamin</item>
+        <item>@drawable/dvitamin</item>
+        <item>@drawable/fejfajas</item>
+        <item>@drawable/gel</item>
+        <item>@drawable/covidteszt2</item>
+        <item>@drawable/lazcsillapito1</item>
+        <item>@drawable/lazcsillapito2</item>
+        <item>@drawable/multivitamin</item>
+        <item>@drawable/svedcsepp</item>
+
+    </array>
+    <array name="medicine_item_prices">
+        <item>2000 Ft</item>
+        <item>1500 Ft</item>
+        <item>1500 Ft</item>
+        <item>4500 Ft</item>
+        <item>3000 Ft</item>
+        <item>3000 Ft</item>
+        <item>3000 Ft</item>
+        <item>2000 Ft</item>
+        <item>5500 Ft</item>
+        <item>5000 Ft</item>
+
+    </array>
+    
+</resources>
